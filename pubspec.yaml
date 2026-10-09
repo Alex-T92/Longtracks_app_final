@@ -1,0 +1,30 @@
+name: long_tracks_radio
+description: Long Tracks Radio - Radio musicale gratuite et sans publicité
+publish_to: 'none'
+version: 1.0.2+21
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  http: ^1.1.0
+  just_audio: ^0.9.40           # ← NOUVEAU (remplace audioplayers)
+  audio_service: ^0.18.15       # ← NOUVEAU (arrière-plan)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/icon.png"
+  adaptive_icon_background: "#E8943A"
+  adaptive_icon_foreground: "assets/icon.png"
